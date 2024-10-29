@@ -18,4 +18,4 @@ This project was created as part of my learning process in JavaScript:
 Understanding loops and conditionals.
 Working with functions and parameters.
 Random number generation and user input handling.
-Input validation.
+Input validation. test
