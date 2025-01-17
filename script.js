@@ -1,3 +1,5 @@
+"use strict";
+
 const figure = ["Rock", "Paper", "Scisors"];
 const buttons = document.querySelectorAll(".btn");
 const gameWindow = document.querySelector(".game");
