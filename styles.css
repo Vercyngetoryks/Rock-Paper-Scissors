@@ -14,6 +14,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: sans-serif;
+  background: black;
 }
 img,
 picture,
@@ -54,6 +55,76 @@ h6 {
   --primary-color: #363636;
 }
 
+header {
+  text-align: center;
+  background-color: var(--primary-color);
+  width: 80%;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #ff8c00, #ff0080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .container {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  max-width: 100rem;
+  height: 100vh;
   background: var(--primary-color);
+  color: white;
+  font-size: 3.2rem;
+  padding: 2rem;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.btns button {
+  font-weight: 700;
+  flex: 1;
+  min-width: 7rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.new-game {
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.new-game:hover,
+.btns button:hover {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 600px) {
+  header {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  .container {
+    font-size: 1.6rem;
+    width: 100%;
+  }
 }
